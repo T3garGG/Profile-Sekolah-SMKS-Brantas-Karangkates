@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontak resmi SMKS Brantas Karangkates - alamat, telepon, media sosial, dan formulir pertanyaan seputar PPDB, jurusan, dan kerjasama industri." />
+    <title>Kontak - SMKS Brantas Karangkates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="asset/favicon.png">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+    <header>
+        <img src="asset/logo.webp" alt="Logo SMKS Brantas" class="logo" width="85" height="85" decoding="async">
+        <h1>Hubungi Kami</h1>
+        <p>Layanan Informasi, Komunikasi, dan Kemitraan Resmi SMKS Brantas Karangkates</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="jurusan.html">Jurusan</a></li>
+            <li><a href="kontak.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="konten-utama">
+        <section>
+            <h2>Informasi Kontak Resmi Sekolah</h2>
+            <p>Silakan hubungi kami melalui saluran komunikasi resmi berikut atau berkunjung langsung ke kampus kami:</p>
+                        <dl class="kontak-list">
+                <dt>Alamat Lengkap</dt>
+                <dd>Jl. Lolaras No. 14, Karangkates, Kec. Sumberpucung, Kab. Malang, Jawa Timur 65165</dd>
+                <dt>Telepon Sekolah</dt>
+                <dd>(0341) 385876</dd>
+                <dt>Layanan BKK (Bursa Kerja Khusus)</dt>
+                <dd>0821-3925-5609 (Bpk. Bambang)</dd>
+                <dt>Website Resmi</dt>
+                <dd><a href="https://smkbrantaskarangkates.sch.id/" target="_blank" rel="noopener">https://smkbrantaskarangkates.sch.id/</a></dd>
+                <dt>Instagram Resmi</dt>
+                <dd><a href="https://www.instagram.com/smkbrantaskarangkates" target="_blank" rel="noopener" aria-label="Instagram SMKS Brantas Karangkates (terbuka di tab baru)">@smkbrantaskarangkates</a></dd>
+                <dt>TikTok Resmi</dt>
+                <dd><a href="https://www.tiktok.com/@smkbrantaskarangkates" target="_blank" rel="noopener" aria-label="TikTok SMKS Brantas Karangkates (terbuka di tab baru)">@smkbrantaskarangkates</a></dd>
+                <dt>Facebook Resmi</dt>
+                <dd><a href="https://www.facebook.com/smkbrantaskarangkates/" target="_blank" rel="noopener" aria-label="Facebook SMKS Brantas Karangkates (terbuka di tab baru)">SMKS Brantas Karangkates</a></dd>
+                <dt>Jam Layanan Kantor</dt>
+                <dd>Senin – Sabtu: 07.00 – 16.00 WIB (Minggu & Hari Libur Nasional Tutup)</dd>
+            </dl>
+        </section>
+        <article>
+            <h2>Kirim Pesan / Pertanyaan</h2>
+            <p>Memiliki pertanyaan seputar pendaftaran siswa baru (PPDB), informasi jurusan, rekrutmen tenaga kerja industri (BKK), atau kerjasama kemitraan? Silakan sampaikan melalui formulir di bawah ini:</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" aria-describedby="helper-nama" required>
+                    <small id="helper-nama" class="helper-text">Nama sesuai ijazah SMP/MTs.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" aria-describedby="helper-email" required>
+                    <small id="helper-email" class="helper-text">Balasan akan dikirim ke email ini.</small>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Nomor WhatsApp / Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+                </div>
+                <div class="form-group">
+                    <label for="subjek">Kategori / Subjek Pesan:</label>
+                    <input type="text" id="subjek" name="subjek" placeholder="Contoh: Informasi PPDB / Kerjasama Industri" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Isi Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan atau pertanyaan Anda secara lengkap..." required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan Sekarang</button>
+                <p id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden>
+                    Terima kasih! Pesan Anda telah terkirim. Kami akan membalas melalui email atau WhatsApp.
+                </p>
+            </form>
+            <script>
+                document.querySelector('form').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var feedback = document.getElementById('form-feedback');
+                    feedback.hidden = false;
+                    this.querySelector('button[type="submit"]').textContent = 'Pesan Terkirim';
+                    this.reset();
+                });
+            </script>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="asset/logo.webp" alt="Logo SMKS Brantas Karangkates" class="footer-logo" width="64" height="64" loading="lazy" decoding="async">
+                <p>SMKS Brantas Karangkates<br>Jl. Lolaras No. 14, Karangkates,<br>Kec. Sumberpucung, Kab. Malang, Jawa Timur 65165</p>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-heading">Link Cepat</h2>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="jurusan.html">Jurusan</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-heading">Hubungi Kami</h2>
+                <ul>
+                    <li>Telepon: (0341) 385876</li>
+                    <li>BKK: 0821-3925-5609 (Bpk. Bambang)</li>
+                    <li>
+                        <a href="https://www.instagram.com/smkbrantaskarangkates" target="_blank" rel="noopener" aria-label="Instagram SMKS Brantas Karangkates (terbuka di tab baru)">Instagram</a> &middot;
+                        <a href="https://www.tiktok.com/@smkbrantaskarangkates" target="_blank" rel="noopener" aria-label="TikTok SMKS Brantas Karangkates (terbuka di tab baru)">TikTok</a> &middot;
+                        <a href="https://www.facebook.com/smkbrantaskarangkates/" target="_blank" rel="noopener" aria-label="Facebook SMKS Brantas Karangkates (terbuka di tab baru)">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; <time datetime="2026">2026</time> SMKS Brantas Karangkates. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
