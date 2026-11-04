@@ -361,6 +361,51 @@ p:last-child {
     text-decoration: underline;
 }
 
+.activity-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.activity-card {
+    flex: 1 1 260px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+    border-color: var(--border-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.activity-card h3,
+.activity-card p {
+    margin: 0;
+}
+
+.activity-card .text-link {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.activity-label {
+    color: var(--primary-blue) !important;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 .contact-cta {
     display: flex;
     align-items: center;
@@ -1016,6 +1061,10 @@ footer time {
 
     .contact-cta .btn {
         width: 100%;
+    }
+
+    .activity-grid {
+        flex-direction: column;
     }
 
     .footer-grid {
